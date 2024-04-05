@@ -1,7 +1,7 @@
 package de.trusteq.usermanager.services
 
-import com.ttymonkey.springcoroutines.models.User
-import com.ttymonkey.springcoroutines.repositories.UserRepository
+import de.trusteq.usermanager.models.User
+import de.trusteq.usermanager.repositories.UserRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.firstOrNull
 import org.springframework.http.HttpStatus

@@ -1,6 +1,6 @@
 package de.trusteq.usermanager.repositories
 
-import com.ttymonkey.springcoroutines.models.User
+import de.trusteq.usermanager.models.User
 import kotlinx.coroutines.flow.Flow
 import org.springframework.data.r2dbc.repository.Query
 import org.springframework.data.repository.kotlin.CoroutineCrudRepository

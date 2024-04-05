@@ -1,9 +1,9 @@
 package de.trusteq.usermanager.controllers
 
-import com.ttymonkey.springcoroutines.dto.UserRequest
-import com.ttymonkey.springcoroutines.dto.UserResponse
-import com.ttymonkey.springcoroutines.models.User
-import com.ttymonkey.springcoroutines.services.UserService
+import de.trusteq.usermanager.dto.UserRequest
+import de.trusteq.usermanager.dto.UserResponse
+import de.trusteq.usermanager.models.User
+import de.trusteq.usermanager.services.UserService
 import de.trusteq.usermanager.toModel
 import de.trusteq.usermanager.toResponse
 import kotlinx.coroutines.flow.Flow

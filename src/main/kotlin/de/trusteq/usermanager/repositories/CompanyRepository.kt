@@ -1,6 +1,6 @@
 package de.trusteq.usermanager.repositories
 
-import com.ttymonkey.springcoroutines.models.Company
+import de.trusteq.usermanager.models.Company
 import kotlinx.coroutines.flow.Flow
 
 interface CompanyRepository {

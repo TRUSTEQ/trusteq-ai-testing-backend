@@ -1,7 +1,7 @@
 package de.trusteq.usermanager.monitoring
 
-import com.ttymonkey.springcoroutines.monitoring.DefaultConstants.DEFAULT_TIME_BUCKETS
-import com.ttymonkey.springcoroutines.monitoring.TimerBuilder.statisticTimerBuilder
+import de.trusteq.usermanager.monitoring.DefaultConstants.DEFAULT_TIME_BUCKETS
+import de.trusteq.usermanager.monitoring.TimerBuilder.statisticTimerBuilder
 import io.micrometer.core.instrument.MeterRegistry
 import java.time.Duration
 import java.util.concurrent.TimeUnit

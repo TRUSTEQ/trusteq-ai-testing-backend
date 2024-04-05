@@ -1,7 +1,7 @@
 package de.trusteq.usermanager.services
 
-import com.ttymonkey.springcoroutines.models.Company
-import com.ttymonkey.springcoroutines.repositories.CompanyRepository
+import de.trusteq.usermanager.models.Company
+import de.trusteq.usermanager.repositories.CompanyRepository
 import kotlinx.coroutines.flow.Flow
 import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Component

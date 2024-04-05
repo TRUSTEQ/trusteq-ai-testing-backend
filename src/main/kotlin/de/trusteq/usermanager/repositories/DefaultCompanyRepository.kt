@@ -1,7 +1,7 @@
 package de.trusteq.usermanager.repositories
 
-import com.ttymonkey.springcoroutines.jooq.application.Tables.COMPANIES
-import com.ttymonkey.springcoroutines.models.Company
+import de.trusteq.usermanager.jooq.application.Tables.COMPANIES
+import de.trusteq.usermanager.models.Company
 import de.trusteq.usermanager.toCompany
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map

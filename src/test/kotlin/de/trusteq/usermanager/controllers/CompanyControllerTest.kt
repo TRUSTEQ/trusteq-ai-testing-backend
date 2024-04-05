@@ -1,10 +1,10 @@
 package de.trusteq.usermanager.controllers
 
 import com.ninjasquad.springmockk.MockkBean
-import com.ttymonkey.springcoroutines.config.TestConfig
-import com.ttymonkey.springcoroutines.models.Company
-import com.ttymonkey.springcoroutines.services.CompanyService
-import com.ttymonkey.springcoroutines.services.UserService
+import de.trusteq.usermanager.config.TestConfig
+import de.trusteq.usermanager.models.Company
+import de.trusteq.usermanager.services.CompanyService
+import de.trusteq.usermanager.services.UserService
 import io.mockk.coEvery
 import io.mockk.coVerify
 import kotlinx.coroutines.flow.flow

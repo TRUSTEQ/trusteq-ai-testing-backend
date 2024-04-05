@@ -1,7 +1,7 @@
 package de.trusteq.usermanager
 
-import com.ttymonkey.springcoroutines.dto.CompanyRequest
-import com.ttymonkey.springcoroutines.dto.CompanyResponse
+import de.trusteq.usermanager.dto.CompanyRequest
+import de.trusteq.usermanager.dto.CompanyResponse
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.Test

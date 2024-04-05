@@ -1,10 +1,10 @@
 package de.trusteq.usermanager.controllers
 
-import com.ttymonkey.springcoroutines.dto.IdNameTypeResponse
-import com.ttymonkey.springcoroutines.models.Company
-import com.ttymonkey.springcoroutines.models.User
-import com.ttymonkey.springcoroutines.services.CompanyService
-import com.ttymonkey.springcoroutines.services.UserService
+import de.trusteq.usermanager.dto.IdNameTypeResponse
+import de.trusteq.usermanager.models.Company
+import de.trusteq.usermanager.models.User
+import de.trusteq.usermanager.services.CompanyService
+import de.trusteq.usermanager.services.UserService
 import de.trusteq.usermanager.toIdNameTypeResponse
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map

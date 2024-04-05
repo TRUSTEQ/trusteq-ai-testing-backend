@@ -1,9 +1,9 @@
 package de.trusteq.usermanager
 
-import com.ttymonkey.springcoroutines.dto.*
-import com.ttymonkey.springcoroutines.jooq.application.tables.records.CompaniesRecord
-import com.ttymonkey.springcoroutines.models.Company
-import com.ttymonkey.springcoroutines.models.User
+import de.trusteq.usermanager.dto.*
+import de.trusteq.usermanager.jooq.application.tables.records.CompaniesRecord
+import de.trusteq.usermanager.models.Company
+import de.trusteq.usermanager.models.User
 
 fun UserRequest.toModel(): User =
     User(

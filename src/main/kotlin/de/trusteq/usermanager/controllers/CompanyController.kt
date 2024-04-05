@@ -1,11 +1,11 @@
 package de.trusteq.usermanager.controllers
 
-import com.ttymonkey.springcoroutines.dto.CompanyRequest
-import com.ttymonkey.springcoroutines.dto.CompanyResponse
-import com.ttymonkey.springcoroutines.models.Company
-import com.ttymonkey.springcoroutines.monitoring.CoroutineMetric.coroutineMetrics
-import com.ttymonkey.springcoroutines.services.CompanyService
-import com.ttymonkey.springcoroutines.services.UserService
+import de.trusteq.usermanager.dto.CompanyRequest
+import de.trusteq.usermanager.dto.CompanyResponse
+import de.trusteq.usermanager.models.Company
+import de.trusteq.usermanager.monitoring.CoroutineMetric.coroutineMetrics
+import de.trusteq.usermanager.services.CompanyService
+import de.trusteq.usermanager.services.UserService
 import de.trusteq.usermanager.toModel
 import de.trusteq.usermanager.toResponse
 import io.micrometer.core.instrument.MeterRegistry
