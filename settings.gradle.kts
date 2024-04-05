@@ -1,1 +1,1 @@
-rootProject.name = "springcoroutines"
+rootProject.name = "usermanager"

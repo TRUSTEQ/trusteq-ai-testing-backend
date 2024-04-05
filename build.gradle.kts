@@ -9,9 +9,9 @@ plugins {
     id("nu.studer.jooq") version "8.2.1"
 }
 
-group = "com.ttymonkey"
+group = "de.trusteq"
 version = "0.0.1-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_21
 
 val postgresVersion = "42.6.0"
 val flywayVersion = "8.5.11"
@@ -66,7 +66,7 @@ dependencies {
 tasks.withType<KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs += "-Xjsr305=strict"
-        jvmTarget = "17"
+        jvmTarget = "21"
     }
 }
 
@@ -110,7 +110,7 @@ jooq {
                         isKotlinNotNullPojoAttributes = true
                     }
                     target.apply {
-                        packageName = "com.ttymonkey.springcoroutines.jooq"
+                        packageName = "de.trusteq.usermanager.jooq"
                     }
                     strategy.name = "org.jooq.codegen.DefaultGeneratorStrategy"
                 }
