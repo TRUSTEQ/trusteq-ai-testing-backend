@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Simple Form</title>
+
+    <script type="text/javascript">
+        function submitCompanyForm() {
+            $.ajax({
+                type: "POST",
+                url: "/api/companies",
+                data: JSON.stringify({
+                    name: $("#companyName")[0].value,
+                    address: $("#companyAddress")[0].value
+                }),
+                success: function(res){
+                    console.log(res)
+                    $("#feedback")[0].innerText = `Company created, ID: ${res.id}`
+                },
+                dataType: "json",
+                contentType : "application/json"
+            });
+        }
+        function submitUserForm() {
+            $.ajax({
+                type: "POST",
+                url: "/api/users",
+                data: JSON.stringify({
+                    name: $("#userName")[0].value,
+                    email: $("#userEmail")[0].value,
+                    age: parseInt($("#userAge")[0].value),
+                    company_id: parseInt($("#companyId")[0].value),
+                }),
+                success: function(res){
+                    console.log(res)
+                    $("#feedback")[0].innerText = `User created, ID: ${res.id}`
+                },
+                dataType: "json",
+                contentType : "application/json"
+            });
+        }
+        function toggleTab(tab) {
+            switch(tab) {
+                case "company":
+                    $("#company")[0].hidden = false;
+                    $("#user")[0].hidden = true;
+                    break;
+                case "user":
+                    $("#company")[0].hidden = true;
+                    $("#user")[0].hidden = false;
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+<div style="display: flex;flex-direction: column;align-items: center;justify-content: center;height: 100vh;">
+    <div id="tabs" style="display: flex; flex-direction: row">
+        <button onclick="toggleTab('company')">Company</button>
+        <button onclick="toggleTab('user')">User</button>
+    </div>
+    <div id="company">
+        <h2>Create Company</h2>
+
+        <div style="display: flex; flex-direction: column; width: min-content">
+            <label for="companyName">Name:</label>
+            <input type="text" id="companyName" name="companyName">
+            <label for="companyAddress">Address</label>
+            <input type="text" id="companyAddress" name="companyAddress">
+        </div>
+        <button onclick="submitCompanyForm()">Submit</button>
+    </div>
+    <div id="user" hidden>
+        <h2>Create User</h2>
+
+        <div style="display: flex; flex-direction: column; width: min-content">
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" name="userName">
+            <label for="userEmail">EMail</label>
+            <input type="text" id="userEmail" name="userEmail">
+            <label for="userAge">Age</label>
+            <input type="number" id="userAge" name="userAge">
+            <label for="companyId">Company ID</label>
+            <input type="number" id="companyId" name="companyId">
+        </div>
+        <button onclick="submitUserForm()">Submit</button>
+    </div>
+    <span id="feedback" style="color: green"></span>
+</div>
+</body>
+</html>
